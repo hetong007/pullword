@@ -1,10 +1,12 @@
 # pullword
 
-An R package for [pullword.com] (http://pullword.com).
+An R package for [pullword.com] (http://pullword.com). 
+
+Another package of mine for NLP online service interface is [rLTP](https://github.com/hetong007/rLTP).
 
 # Installation:
 
-```
+```R
 devtools::install_github('hetong007/pullword')
 ```
 
