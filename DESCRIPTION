@@ -1,0 +1,14 @@
+Package: pullword
+Title: R interface to pullword service
+Description: R interface to pullword service for Natural Language Processing
+    in Chinese. It enables users to extract valuable words from text by deep learning models. 
+    For more details please visit http://pullword.com/. Visit https://github.com/hetong007/pullword for up-to-date version.
+Version: 0.1
+Author: Tong He <hetong007@gmail.com>
+Maintainer: Tong He <hetong007@gmail.com>
+BugReports: https://github.com/hetong007/pullword/issues
+Depends:
+    R (>= 3.0.2),RCurl
+License: LGPL
+LazyData: true
+
