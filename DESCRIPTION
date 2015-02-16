@@ -1,5 +1,5 @@
 Package: pullword
-Title: R interface to pullword service
+Title: R Interface to Pullword Service
 Description: R interface to pullword service for Natural Language Processing
     in Chinese. It enables users to extract valuable words from text by deep learning models. 
     For more details please visit http://pullword.com/. Visit https://github.com/hetong007/pullword for up-to-date version.
