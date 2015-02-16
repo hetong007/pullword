@@ -6,9 +6,13 @@ Another package of mine for NLP online service interface is [rLTP](https://githu
 
 # Installation:
 
+It is being submitted to CRAN.
+
 ```R
 devtools::install_github('hetong007/pullword')
 ```
+
+Because the `cpp` files, installation from github on Windows requires [Rtools](http://cran.r-project.org/bin/windows/Rtools/).
 
 # Example:
 
