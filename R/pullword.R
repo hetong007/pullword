@@ -22,8 +22,6 @@ pullword = function(input=NULL,file=NULL,threshold=0,showProb=FALSE)
         input = readLines(file)
     if (!isUTF8(input[1]))
         input = toUTF8(input)
-    input = gsub('\\s+','',input)
-    input = input[input!='']
     if (length(input)==0)
         stop('Empty Input.')
     n = length(input)
