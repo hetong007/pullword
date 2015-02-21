@@ -6,7 +6,13 @@ Another package of mine for NLP online service interface is [rLTP](https://githu
 
 # Installation:
 
-It is being submitted to CRAN.
+To install the version on CRAN, run
+
+```R
+install.packages('pullword')
+```
+
+To install the (possible) up-to-date version on github, please run
 
 ```R
 devtools::install_github('hetong007/pullword')
