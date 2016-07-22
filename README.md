@@ -1,5 +1,8 @@
 # pullword
 
+[![CRAN Status Badge](http://www.r-pkg.org/badges/version/pullword)](http://cran.r-project.org/web/packages/pullword)
+[![CRAN Downloads](http://cranlogs.r-pkg.org/badges/pullword)](http://cran.rstudio.com/web/packages/pullword/index.html)
+
 An R package for [pullword.com] (http://pullword.com). 
 
 Another package of mine for NLP online service interface is [rLTP](https://github.com/hetong007/rLTP).
