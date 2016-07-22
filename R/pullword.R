@@ -32,11 +32,8 @@ pullword = function(input=NULL,file=NULL,threshold=0,showProb=FALSE)
     
     # Upload 
     cat('Uploading\n')
-    result = getForm(uri = "http://api.pullword.com/get.php?",
-                     style = "get",
-                     'source' = input,
-                     'param1' = threshold,
-                     'param2' = as.numeric(showProb))
+    result = getURI(paste0("http://api.pullword.com/get.php?source=", input,
+                           "&param1=",threshold,"&param2=",as.numeric(showProb)))
     # Parse
     if (showProb)
     {
