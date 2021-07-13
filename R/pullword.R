@@ -37,7 +37,7 @@ pullword = function(input=NULL, file=NULL, threshold=0, showProb=FALSE)
                       "&param1=",threshold,"&param2=",as.numeric(showProb))),
         error=function(cond) {
             message("Please check your network connection and try again.")
-            return ''
+            return('')
         }
     )
 

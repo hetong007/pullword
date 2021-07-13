@@ -3,7 +3,7 @@ Title: R Interface to Pullword Service
 Description: R Interface to Pullword Service for natural language processing
     in Chinese. It enables users to extract valuable words from text by deep learning models. 
     For more details please visit the official site (in Chinese) http://pullword.com/.
-Version: 0.2
+Version: 0.3
 Author: Tong He <hetong007@gmail.com>
 Maintainer: Tong He <hetong007@gmail.com>
 BugReports: https://github.com/hetong007/pullword/issues
