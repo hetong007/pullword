@@ -10,11 +10,11 @@
 #' @param showProb logical. The return value would be a \code{data.frame} if \code{TRUE}, or a \code{vector} otherwise.
 #' @examples
 #' require(pullword)
-#' pullword('Replace this field with a Chinese sentence.',threshold=0,showProb=TRUE)
+#' pullword('Replace this field with a Chinese sentence.', threshold=0, showProb=TRUE)
 #' 
 #' @export
 #' 
-pullword = function(input=NULL,file=NULL,threshold=0,showProb=FALSE)
+pullword = function(input=NULL, file=NULL, threshold=0, showProb=FALSE)
 {
     if (is.null(input) && is.null(file))
         stop('No Input.')
@@ -32,8 +32,15 @@ pullword = function(input=NULL,file=NULL,threshold=0,showProb=FALSE)
     
     # Upload 
     cat('Uploading\n')
-    result = getURI(paste0("http://api.pullword.com/get.php?source=", input,
-                           "&param1=",threshold,"&param2=",as.numeric(showProb)))
+    result = tryCatch(
+        getURI(paste0("http://api.pullword.com/get.php?source=", input,
+                      "&param1=",threshold,"&param2=",as.numeric(showProb))),
+        error=function(cond) {
+            message("Please check your network connection and try again.")
+            return ''
+        }
+    )
+
     # Parse
     if (showProb)
     {
